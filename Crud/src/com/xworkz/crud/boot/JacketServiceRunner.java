@@ -11,7 +11,7 @@ public class JacketServiceRunner {
 		System.out.println("Invoking main in JacketServiceRunner");
 		JacketRepository jacketRepsitory = new JacketRepositoryimpl();
 		JacketService jacketService = new JacketServiceImpl(jacketRepsitory);
-		jacketService.validateBrand("Puma");
+		jacketService.validateAndSave("Puma");
 	}
 	}
 

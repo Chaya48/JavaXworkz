@@ -11,7 +11,7 @@ public class ArtistServiceRunner {
 		System.out.println("Invoking main in ArtistServiceRunner");
 		ArtistRepository artistRepository = new ArtistRepositoryImpl();
 		ArtistService artistService = new ArtistServiceImpl(artistRepository);
-		artistService.validateAndMovie("SSE");
+		artistService.validateAndSave("ABC");
 
 	}
 

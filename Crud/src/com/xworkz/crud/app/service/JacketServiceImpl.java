@@ -10,11 +10,11 @@ public class JacketServiceImpl  implements JacketService{
 	}
 
 	@Override
-	public void validateBrand(String brand) {
+	public void validateAndSave(String jacket) {
 		System.out.println("invoking validateBrand from " + this.getClass().getSimpleName());
-		if (brand != null && !brand.isEmpty() && brand.length() >= 3 && brand.length() <= 20) {
+		if (jacket != null && !jacket.isEmpty() && jacket.length() >= 3 && jacket.length() <= 20) {
 			System.out.println("Jacket data is valid");
-			this.jacketRepository.color(brand);
+			this.jacketRepository.cover(jacket);
 		} else {
 			System.out.println("Jacket data invalid");
 		}

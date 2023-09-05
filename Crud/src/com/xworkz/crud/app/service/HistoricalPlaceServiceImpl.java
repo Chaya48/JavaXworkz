@@ -11,11 +11,11 @@ public class HistoricalPlaceServiceImpl implements HistoricalPlaceService {
 	}
 
 	@Override
-	public boolean validateHistory(String name) {
+	public boolean validateAndSave(String places) {
 		System.out.println("invoking validateHistory from " + this.getClass().getSimpleName());
-		if (name != null && !name.isEmpty() && name.length() >= 3 && name.length() <= 20) {
+		if (places != null && !places.isEmpty() && places.length() >= 3 && places.length() <= 20) {
 			System.out.println("Historical place data is valid");
-			this.historicalPlacesRepository.place(name);
+			this.historicalPlacesRepository.visiting(places);
 
 		} else {
 			System.out.println("Historical place data invalid");

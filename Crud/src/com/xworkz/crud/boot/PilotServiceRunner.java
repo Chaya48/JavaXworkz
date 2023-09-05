@@ -11,7 +11,7 @@ public class PilotServiceRunner {
 		System.out.println("Invoking main in PilotRunner");
 		PilotRepository pilotRepository = new PilotRepositoryImpl();
 		PilotService pilotService = new PilotServiceImpl(pilotRepository);
-		pilotService.validateNavigation("Banglore");
+		pilotService.validateAndSave("Banglore");
 
 	}
 

@@ -11,12 +11,12 @@ public class PilotServiceImpl implements PilotService {
 	}
 
 	@Override
-	public void validateNavigation(String name) {
+	public void validateAndSave(String pilot) {
 
 		System.out.println("invoking validateNavigation from " + this.getClass().getSimpleName());
-		if (name != null && !name.isEmpty() && name.length() >= 3 && name.length() <= 20) {
+		if (pilot != null && !pilot.isEmpty() && pilot.length() >= 3 && pilot.length() <= 20) {
 			System.out.println("Pilot data is valid");
-			this.pilotRepository.navigation(name);
+			this.pilotRepository.transpotingPassengers(pilot);
 		} else {
 			System.out.println("Pilot data invalid");
 		}

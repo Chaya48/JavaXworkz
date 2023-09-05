@@ -1,5 +1,5 @@
 package com.xworkz.crud.app.service;
 
 public interface PoliticianService {
-	boolean validateExperience(String name);
+	boolean validateAndSave(String politician);
 }

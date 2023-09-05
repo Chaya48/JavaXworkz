@@ -11,12 +11,12 @@ public class MedicineServiceImpl implements MedicineService {
 	}
 
 	@Override
-	public void validateName(String madicineName) {
+	public void validateAndSave(String medicine) {
 		System.out.println("invoking validateName from " + this.getClass().getSimpleName());
-		if (madicineName != null && !madicineName.isEmpty() && madicineName.length() >= 3
-				&& madicineName.length() <= 20) {
+		if (medicine != null && !medicine.isEmpty() && medicine.length() >= 3
+				&& medicine.length() <= 20) {
 			System.out.println("Medicine data is valid");
-			this.medicineRepository.name(madicineName);
+			this.medicineRepository.cure(medicine);
 		} else {
 			System.out.println("Medicine data invalid");
 		}

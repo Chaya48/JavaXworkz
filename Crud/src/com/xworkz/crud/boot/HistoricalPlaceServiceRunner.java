@@ -11,7 +11,7 @@ public class HistoricalPlaceServiceRunner {
 		System.out.println("Invoking main in HistoricalPlaceRunner");
 		HistoricalPlacesRepository historicalPlaceRepository=new HistoricalPlacesRepositoryImpl();
 		HistoricalPlaceService historicalPlaceService=new HistoricalPlaceServiceImpl(historicalPlaceRepository);
-		historicalPlaceService.validateHistory("Mysore palace");
+		historicalPlaceService.validateAndSave("Halebidu");
 
 	}
 

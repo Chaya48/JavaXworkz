@@ -11,11 +11,11 @@ public class ArtistServiceImpl implements ArtistService {
 	}
 
 	@Override
-	public void validateAndMovie(String name) {
-		System.out.println("invoking validateAndMovie from " + this.getClass().getSimpleName());
-		if (name != null && !name.isEmpty() && name.length() >= 3 && name.length() <= 20) {
+	public void validateAndSave(String artist) {
+		System.out.println("invoking validateAndSave from " + this.getClass().getSimpleName());
+		if (artist != null && !artist.isEmpty() && artist.length() >= 3 && artist.length() <= 20) {
 			System.out.println("Artist data is valid");
-			this.artistRepository.Movie(name);;
+			this.artistRepository.performance(artist);
 		} else {
 			System.out.println("Artist data invalid");
 		}

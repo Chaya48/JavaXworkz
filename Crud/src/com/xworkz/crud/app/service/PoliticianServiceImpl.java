@@ -11,11 +11,11 @@ public class PoliticianServiceImpl implements PoliticianService {
 	}
 
 	@Override
-	public boolean validateExperience(String name) {
+	public boolean validateAndSave(String politician) {
 		System.out.println("invoking validateExperience from " + this.getClass().getSimpleName());
-		if (name != null && !name.isEmpty() && name.length() >= 3 && name.length() <= 20) {
+		if (politician != null && !politician.isEmpty() && politician.length() >= 3 && politician.length() <= 20) {
 			System.out.println("Politician data is valid");
-			this.politicianRepository.experience(name);
+			this.politicianRepository.socialization(politician);
 		} else {
 			System.out.println("Politician data invalid");
 		}

@@ -11,11 +11,11 @@ public class PatientServiceImpl implements PatientService {
 	}
 
 	@Override
-	public void validPlace(String pname) {
+	public void validateAndSave(String patient) {
 		System.out.println("invoking validatePlace from " + this.getClass().getSimpleName());
-		if (pname != null && !pname.isEmpty() && pname.length() >= 3 && pname.length() <= 20) {
+		if (patient != null && !patient.isEmpty() && patient.length() >= 3 && patient.length() <= 20) {
 			System.out.println("Patient data is valid");
-			this.patientRepository.place(pname);
+			this.patientRepository.bedRest(patient);
 		} else {
 			System.out.println("Patient data invalid");
 		}

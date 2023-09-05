@@ -11,7 +11,7 @@ public class MedicineServiceRunner {
 		System.out.println("Invoking main in MedicineServiceRunner");
 		MedicineRepository medicineRepository = new MedicineRepositoryImpl();
 		MedicineService medicineService = new MedicineServiceImpl(medicineRepository);
-		medicineService.validateName("Cipla");
+		medicineService.validateAndSave("Cipla");
 
 	}
 

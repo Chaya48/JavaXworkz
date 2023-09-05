@@ -11,7 +11,7 @@ public class PoliticianServiceRunner {
 		System.out.println("Invoking main in PoliticianServiceRunner");
 	    PoliticianRepository politcianRepository = new PoliticianRepositoryImpl();
 		PoliticianService politicianService = new PoliticianServiceImpl(politcianRepository);
-		politicianService.validateExperience("BNG");
+		politicianService.validateAndSave("BNG");
 	}
 
 }
