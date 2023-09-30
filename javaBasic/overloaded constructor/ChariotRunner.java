@@ -1,0 +1,173 @@
+class ChariotRunner{
+	public static void main(String[] args){
+		System.out.println("invoking main in ChariotRunner");
+		
+		Chariot chariot=new Chariot();
+		System.out.println(chariot.typeOfDriven);
+		System.out.println(chariot.wordComesFrom);
+		System.out.println(chariot.wheelNumbers);
+		System.out.println(chariot.usingAnimal);
+		System.out.println(chariot.type);
+		System.out.println(chariot.introduced);
+		System.out.println(chariot.priceForRide);
+		System.out.println(chariot.animalNumber);
+		System.out.println(chariot.horseEyes);
+		System.out.println(chariot.riderName);
+		System.out.println(chariot.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot1=new Chariot("cart");
+		System.out.println(chariot1.typeOfDriven);
+		System.out.println(chariot1.wordComesFrom);
+		System.out.println(chariot1.wheelNumbers);
+		System.out.println(chariot1.usingAnimal);
+		System.out.println(chariot1.type);
+		System.out.println(chariot1.introduced);
+		System.out.println(chariot1.priceForRide);
+		System.out.println(chariot1.animalNumber);
+		System.out.println(chariot1.horseEyes);
+		System.out.println(chariot1.riderName);
+		System.out.println(chariot1.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot2=new Chariot("cart","latin");
+		System.out.println(chariot2.typeOfDriven);
+		System.out.println(chariot2.wordComesFrom);
+		System.out.println(chariot2.wheelNumbers);
+		System.out.println(chariot2.usingAnimal);
+		System.out.println(chariot2.type);
+		System.out.println(chariot2.introduced);
+		System.out.println(chariot2.priceForRide);
+		System.out.println(chariot2.animalNumber);
+		System.out.println(chariot2.horseEyes);
+		System.out.println(chariot2.riderName);
+		System.out.println(chariot2.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot3=new Chariot("cart","latin",2);
+		System.out.println(chariot3.typeOfDriven);
+		System.out.println(chariot3.wordComesFrom);
+		System.out.println(chariot3.wheelNumbers);
+		System.out.println(chariot3.usingAnimal);
+		System.out.println(chariot3.type);
+		System.out.println(chariot3.introduced);
+		System.out.println(chariot3.priceForRide);
+		System.out.println(chariot3.animalNumber);
+		System.out.println(chariot3.horseEyes);
+		System.out.println(chariot3.riderName);
+		System.out.println(chariot3.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot4=new Chariot("cart","latin",2,"horse");
+		System.out.println(chariot4.typeOfDriven);
+		System.out.println(chariot4.wordComesFrom);
+		System.out.println(chariot4.wheelNumbers);
+		System.out.println(chariot4.usingAnimal);
+		System.out.println(chariot4.type);
+		System.out.println(chariot4.introduced);
+		System.out.println(chariot4.priceForRide);
+		System.out.println(chariot4.animalNumber);
+		System.out.println(chariot4.horseEyes);
+		System.out.println(chariot4.riderName);
+		System.out.println(chariot4.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot5=new Chariot("cart","latin",2,"horse","open");
+		System.out.println(chariot5.typeOfDriven);
+		System.out.println(chariot5.wordComesFrom);
+		System.out.println(chariot5.wheelNumbers);
+		System.out.println(chariot5.usingAnimal);
+		System.out.println(chariot5.type);
+		System.out.println(chariot5.introduced);
+		System.out.println(chariot5.priceForRide);
+		System.out.println(chariot5.animalNumber);
+		System.out.println(chariot5.horseEyes);
+		System.out.println(chariot5.riderName);
+		System.out.println(chariot5.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot6=new Chariot("cart","latin",2,"horse","open","Near East");
+		System.out.println(chariot6.typeOfDriven);
+		System.out.println(chariot6.wordComesFrom);
+		System.out.println(chariot6.wheelNumbers);
+		System.out.println(chariot6.usingAnimal);
+		System.out.println(chariot6.type);
+		System.out.println(chariot6.introduced);
+		System.out.println(chariot6.priceForRide);
+		System.out.println(chariot6.animalNumber);
+		System.out.println(chariot6.horseEyes);
+		System.out.println(chariot6.riderName);
+		System.out.println(chariot6.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot7=new Chariot("cart","latin",2,"horse","open","Near East",100);
+		System.out.println(chariot7.typeOfDriven);
+		System.out.println(chariot7.wordComesFrom);
+		System.out.println(chariot7.wheelNumbers);
+		System.out.println(chariot7.usingAnimal);
+		System.out.println(chariot7.type);
+		System.out.println(chariot7.introduced);
+		System.out.println(chariot7.priceForRide);
+		System.out.println(chariot7.animalNumber);
+		System.out.println(chariot7.horseEyes);
+		System.out.println(chariot7.riderName);
+		System.out.println(chariot7.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot8=new Chariot("cart","latin",2,"horse","open","Near East",100,1);
+		System.out.println(chariot8.typeOfDriven);
+		System.out.println(chariot8.wordComesFrom);
+		System.out.println(chariot8.wheelNumbers);
+		System.out.println(chariot8.usingAnimal);
+		System.out.println(chariot8.type);
+		System.out.println(chariot8.introduced);
+		System.out.println(chariot8.priceForRide);
+		System.out.println(chariot8.animalNumber);
+		System.out.println(chariot8.horseEyes);
+		System.out.println(chariot8.riderName);
+		System.out.println(chariot8.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot9=new Chariot("cart","latin",2,"horse","open","Near East",100,1,"closed");
+		System.out.println(chariot9.typeOfDriven);
+		System.out.println(chariot9.wordComesFrom);
+		System.out.println(chariot9.wheelNumbers);
+		System.out.println(chariot9.usingAnimal);
+		System.out.println(chariot9.type);
+		System.out.println(chariot9.introduced);
+		System.out.println(chariot9.priceForRide);
+		System.out.println(chariot9.animalNumber);
+		System.out.println(chariot9.horseEyes);
+		System.out.println(chariot9.riderName);
+		System.out.println(chariot9.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot10=new Chariot("cart","latin",2,"horse","open","Near East",100,1,"closed","chaya");
+		System.out.println(chariot10.typeOfDriven);
+		System.out.println(chariot10.wordComesFrom);
+		System.out.println(chariot10.wheelNumbers);
+		System.out.println(chariot10.usingAnimal);
+		System.out.println(chariot10.type);
+		System.out.println(chariot10.introduced);
+		System.out.println(chariot10.priceForRide);
+		System.out.println(chariot10.animalNumber);
+		System.out.println(chariot10.horseEyes);
+		System.out.println(chariot10.riderName);
+		System.out.println(chariot10.riderNumbers);
+		System.out.println("\n");
+		
+		Chariot chariot11=new Chariot("cart","latin",2,"horse","open","Near East",100,1,"closed","chaya",2);
+		System.out.println(chariot11.typeOfDriven);
+		System.out.println(chariot11.wordComesFrom);
+		System.out.println(chariot11.wheelNumbers);
+		System.out.println(chariot11.usingAnimal);
+		System.out.println(chariot11.type);
+		System.out.println(chariot11.introduced);
+		System.out.println(chariot11.priceForRide);
+		System.out.println(chariot11.animalNumber);
+		System.out.println(chariot11.horseEyes);
+		System.out.println(chariot11.riderName);
+		System.out.println(chariot11.riderNumbers);
+		System.out.println("\n");
+	}
+}

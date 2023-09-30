@@ -1,0 +1,166 @@
+DDL : data 
+belogs to Structe of datebase
+DATABASE
+Oraganisted collection database
+DDL:  date definition language
+1) CREAT: database and tables.views, Stored proedure.
+Sytax:
+CREAT DATABASE database_name;
+
+exp:  CREAT DATABASE  jun_19th;
+
+creat table:
+Sytax:
+use database_name;
+
+exp:USE jun_19th;
+
+Create table:
+sytax:
+CREATE Table table_name()
+
+remove column
+
+alter table table_name Drop column column_name;
+
+REname the column_name:
+
+alter table table_name REname column existing_column_nmae to new_name;
+
+change the datatype:
+
+alter table table_name Modify column column_name new_dataType;
+
+
+DESC : discribe // information of datatype
+
+desc table_name;
+
+
+3) DROP
+dnot use this 
+select * from database_name;
+drop database database_name;
+drop table table_name;;
+
+DML : data manupulation language
+belogs to data 
+
+1)INSERT
+
+select*from table_name;
+
+INSERT INTO table_name VALUES(data1,data2........);//all columns
+
+INSERT into table_name(column_name)values(data);// selected column
+
+comple row is one object
+
+table id is mantory;
+select only seleccted columns
+SELECT column_name from table_name; //select only seleccted columns
+WHERE // fiter the data from the table
+select*from column_name where condition;//column condition
+ex : id=2;
+
+TRUNCATE:  //date will be deleted but data strcture remains same
+
+create table tab1(id int, t_name varchar(10));
+insert  into table values(1,'abc'),()); // another type of insert data
+
+DML: 
+UPDATE:
+
+update table_name set column_name where condition;  // single update
+update table_name set column_name=value,column_name=value2 where condition;  //multiple row
+
+
+DELETE:
+
+delete from table_name where condition;
+
+
+TCL: transation control Language.
+
+1) commit
+
+
+
+
+
+
+ORDER BY:
+//
+SELECT*from table_name order by column_name;//assending order
+
+select*from table_name order by column_name desc;
+
+INSTR:    //insttring
+in string find out the position of characcter
+2 parameters string and characcter
+select INSTR('banglure','n');
+select column_name,INSTR(column_name,'characcter')as position from table_name;
+
+SUBSTR: //sunstring
+select SUBSTR('bangalore',4,3);
+used to find the substring of the string
+Select SUBSTR(string,startposition,no of cha\ to feth);
+select column_name SUBSTR(column_name,startposition,no of characcter)from table_name;
+
+ex:
+select SUBSTR('abccdef',2,8);
+output: bcdef
+
+create table duplite_name as select * FROM table_name;         //duplite the table_name;
+
+create table column_name as select column_name1,column_name3 from table_name;  
+
+
+
+JOINS:
+its in form of key and value,
+
+
+SUBQUERIES: or innerqueri or nestedqueri
+innerqueri is exiqued first
+always present in the parantasis
+queries in the querie
+
+
+select column_name from table_name where column_name1 =
+(select column_name1 from table_name2 where column_name2=value);
+
+column_name name is present in the two tables is same
+
+subquier is exiqued faster than joins
+
+
+Date functions:
+
+SELECT current_date();
+
+DATE Diff:
+
+SELECT DATE_DIFF('year-month-date','year-month-date');  // from to date or diffrence date
+
+
+dayname:
+
+select dayname('year-month-date');// finding the day name
+select adddate('year-month-date',interval 5 day);  //take after 5 days taking
+select adddate('year-month-date',interval -5 day);  //take before 5 days taking
+select adddate('year-month-date',interval -1 week); // taking  before 1 week
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
