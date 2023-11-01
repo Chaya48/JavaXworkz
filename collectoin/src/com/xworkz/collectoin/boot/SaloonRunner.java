@@ -36,33 +36,36 @@ public class SaloonRunner {
 		
 		
 		Iterator<SaloonDTO> iterator=saloon.iterator();
-		while(iterator.hasNext()) {
-			SaloonDTO saloon1=iterator.next();
-			System.out.println("Name :"+saloon1.getName());
+		int count=0;
+		for(SaloonDTO saloonDTO:saloon) {
+			if(saloonDTO.getName().contains("s")) {
+				System.out.println("saloon name contain s :"+saloonDTO.getName());
+				count++;
+			}
 		}
-		
+		System.out.println("count is :"+count);
 		Collection<SaloonDTO> saloon2=new ArrayList<SaloonDTO>();
 		SaloonDTO dto11=new SaloonDTO(11,"Rejuvenate", 520,"Combo", true);
 		SaloonDTO dto12=new SaloonDTO(12,"Zenesty", 800,"Washer", false);
+		saloon2.add(dto11);
+		saloon2.add(dto12);
 		
 		boolean containAll=saloon2.containsAll(saloon);
 		System.out.println("After containsAll "+containAll);
-		System.out.println();
 		
-		boolean contain=saloon.contains(dto11);
-		System.out.println("after contains "+contain);
-		System.out.println();
-		
+		boolean remove=saloon2.remove(dto12);
+		System.out.println("after remove :"+remove);
+		System.out.println("Remove size is :"+saloon2.size());
+				
 		Collection<SaloonDTO> saloon3 = new ArrayList<>();
 		SaloonDTO dto13=new SaloonDTO(13,"Brow Baroque", 520,"Combo", true);
 		SaloonDTO dto14=new SaloonDTO(14,"Endless Charm", 800,"Washer", false);
-		
+		saloon3.add(dto13);
+		saloon3.add(dto14);
+				
 		boolean removeAll=saloon.removeAll(saloon3);
 		System.out.println("after removeAll :"+removeAll);
-		System.out.println();
+		System.out.println("Remove all size is :"+saloon3.size());
 		
-		boolean remove=saloon.remove(dto14);
-		System.out.println("after remove :"+remove);
-		System.out.println();
 }
 }
