@@ -6,10 +6,14 @@ public class PincodeServiceImpl implements PincodeService {
 
 	private PincodeRepository pincodeRepository;
 
+	public PincodeServiceImpl(PincodeRepository pincodeRepository) {
+		this.pincodeRepository =pincodeRepository;
+	}
+
 	@Override
 	public boolean validateAndSave(int pincode) {
 		System.out.println("invoking validateAndSave from " + getClass().getSimpleName());
-		if (pincode != 0) {
+		if (pincode > 0) {
 			if (!this.pincodeRepository.isExist(pincode)) {
 				System.out.println("pincode is " + pincode);
 				this.pincodeRepository.identify(pincode);

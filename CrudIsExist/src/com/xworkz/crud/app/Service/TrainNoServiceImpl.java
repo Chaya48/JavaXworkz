@@ -6,9 +6,10 @@ public class TrainNoServiceImpl implements TrainNoService {
 
 	private TrainNoRepository trainNoRepository;
 
-public TrainNoServiceImpl(TrainNoRepository trainNoRepository) {
-this.trainNoRepository=trainNoRepository;
-}
+	public TrainNoServiceImpl(TrainNoRepository trainNoRepository) {
+		this.trainNoRepository = trainNoRepository;
+	}
+
 	@Override
 	public boolean validateAndSave(String train) {
 		System.out.println("invoking validateAndSave from " + this.getClass().getSimpleName());

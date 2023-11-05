@@ -17,7 +17,7 @@ public class CountryRepositoryImpl implements CountryRepository {
 	for(int index=0; index<=position; index++) {
 		String temp=this.counties[index];
 		if (temp != null && temp.equals(country)) {
-			System.err.println("juice is already exit plese select another");
+			System.err.println("counties is already exit plese select another");
 			return true;
 		}
 

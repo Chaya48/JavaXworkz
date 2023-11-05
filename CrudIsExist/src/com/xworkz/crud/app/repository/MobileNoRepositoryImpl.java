@@ -7,7 +7,7 @@ public class MobileNoRepositoryImpl implements MobileNoRepository {
 	@Override
 	public void identify(long number) {
 
-		System.out.println("invoking store in JuiceRepositoryImpl");
+		System.out.println("invoking store in MobileNoRepositoryImpl");
 		if (position < TOTAL_NUMBERS) {
 			this.numbers[position] = number;
 			System.out.println("item : " + number + "position :" + this.position);

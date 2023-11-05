@@ -5,7 +5,7 @@ import com.xworkz.crud.app.repository.LocationRepository;
 public class LocationServiceImpl implements LocationService {
 
 	private LocationRepository locationRepository;
-
+ 
 	public LocationServiceImpl(LocationRepository LocationRepository) {
 		this.locationRepository = locationRepository;
 	}

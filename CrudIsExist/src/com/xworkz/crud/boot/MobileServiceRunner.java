@@ -1,4 +1,4 @@
-package com.xworkz.crud.boot;
+ package com.xworkz.crud.boot;
 
 import com.xworkz.crud.app.Service.MobileNoService;
 import com.xworkz.crud.app.Service.MobileNoServiceImpl;
