@@ -17,7 +17,17 @@ public class ToysResource extends HttpServlet {
 	}
 
 	@Override
-	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse reqp) throws ServletException, IOException {
 		System.out.println("running the toysResourece");
+		String toyName = req.getParameter("toyName");
+		String color = req.getParameter("color");
+		String idealFor = req.getParameter("idealFor");
+		String age = req.getParameter("minAge");
+		String quantity = req.getParameter("quantity");
+		System.out.println("toy name is :"+toyName);
+		System.out.println("color is :"+color);
+		System.out.println("idealFor :"+idealFor);
+		System.out.println("minAge is :"+age);
+		System.out.println("quantity is :"+ quantity);
 	}
 }
