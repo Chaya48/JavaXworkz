@@ -38,13 +38,13 @@ public class SportRunner {
 		
 		Corporator corporator=new Corporator("Shri",buildings);
 		
-		Area area=new Area();
-		Area area1=new Area();
+		Area area=new Area(name, corporator);
+		Area area1=new Area(name, corporator);
 
 		
 		Area[] areas= {area, area1};
 		
-		HomeTown town=new HomeTown("bangalore",590061,areas);
+		HomeTown town=new HomeTown("bangalore",590061,areas[]);
 		
 		Players player=new Players("virat",20,town,building);
 		Players player1=new Players("ABD",18,town,building1);

@@ -11,7 +11,7 @@ public class Corporator {
 	public void printInfo() {
 		System.out.println("name is :"+name);
 		for(int index=0; index<buildings.length; index++) {
-			Buildiing ref=buildings[index];
+			Building ref=buildings[index];
 			ref.printInfo();
 		}
 	}
