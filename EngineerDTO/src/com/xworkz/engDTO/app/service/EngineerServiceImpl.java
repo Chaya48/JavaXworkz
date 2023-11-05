@@ -28,7 +28,7 @@ public class EngineerServiceImpl implements EngineerService {
 			} else {
 				System.err.println("name is invalid");
 			}
-			if (collageName != null && !collageName.isEmpty() && collageName.length() > 4
+			if (collageName != null && !collageName.isEmpty() && collageName.length() >=3
 					&& collageName.length() < 20) {
 				System.out.println("collage name is valid");
 			} else {
