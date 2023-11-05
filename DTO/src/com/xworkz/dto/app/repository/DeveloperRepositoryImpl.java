@@ -6,7 +6,7 @@ public class DeveloperRepositoryImpl implements DeveloperRepository {
 
 	private DeveloperDTO[] dtos = new DeveloperDTO[TOTAL_ITEMS];
 	private int position;
-	private int salary;
+	private double salary;
 
 	@Override
 	public void save(DeveloperDTO dto) {
