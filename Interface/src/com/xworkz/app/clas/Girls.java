@@ -6,7 +6,7 @@ public class Girls implements PGRules {
 
 	@Override
 	public int timings(int time) {
-System.out.println("invoking timings in girls");
+		System.out.println("invoking timings in girls");
 		return 0;
 	}
 
