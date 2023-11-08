@@ -33,7 +33,7 @@ public class OceanRunner {
 		System.out.println();
 
 		Optional<OceanDTO> ref = ocean.stream().filter(oce -> oce.getLocation().equals("India")).findFirst();
-		System.out.println(ref);
+		System.out.println(ref );
 	}
 
 }

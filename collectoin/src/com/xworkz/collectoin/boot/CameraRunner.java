@@ -39,5 +39,6 @@ public class CameraRunner {
 		cameraCollection.stream().filter(camer -> camer.getBrand().equals("sony")).map(cam -> cam.getCost())
 				.forEach(p -> System.out.println(p));
 	}
+	
 
 }
